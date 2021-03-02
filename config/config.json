@@ -1,0 +1,27 @@
+{
+  "http_addr":"0.0.0.0:5001",
+  "log_config": {
+    "count" : 5,
+    "level": "info",
+    "uint": "MB",
+    "role_type": "RollingFile",
+    "file": "xgo.log",
+    "dir": "/opt/log",
+    "size" : 20,
+    "compress": 1
+  },
+  "db": {
+      "username": "root",
+      "host": "127.0.0.1",
+      "password": "123456",
+      "port" : 3306,
+      "databases": "gu"
+  },
+  "redis": {
+    "max_idle": 3,
+    "idle_timeout": 240,
+    "password": "",
+    "timeout": 3,
+    "address": "127.0.0.1:6379"
+  }
+}
